@@ -1,0 +1,10 @@
+{
+	"nivel" : [
+		"Primaria"
+	],
+	"area" : ["Matemáticas", "Estadística"],
+	"titulo" : "Población y muestra",
+	"descripcion" : "Comprender las condiciones para que una muestra sea representativa de la población.",
+	"resena" : "Comprender las condiciones para que una muestra sea representativa de la población.",
+	"id" : "R2_Muestreo"
+}

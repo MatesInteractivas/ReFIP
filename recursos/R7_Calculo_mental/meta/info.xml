@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="R7_Calculo_mental" 
+	nivel="Primaria" 
+	area="Matemáticas, Aritmética" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Cálculo mental
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+Comprender el funcionamiento de técnicas de cálculo mental de adiciones y sustracciones.
+	]]></Descripcion>
+</recurso>
+

@@ -1,0 +1,10 @@
+{
+	"nivel" : [
+		"Primaria"
+	],
+	"area" : ["Matemáticas", "Geometría"],
+	"titulo" : "Redes del cubo",
+	"descripcion" : "Construir todas las redes del cubo y decidir que condiciones debe cumplir un hexaminó para que efectivamente sea una red del cubo.",
+	"resena" : "Construir todas las redes del cubo y decidir que condiciones debe cumplir un hexaminó para que efectivamente sea una red del cubo.",
+	"id" : "R4_Redes_del_cubo"
+}

@@ -1,0 +1,117 @@
+@import url('style.css');
+
+/* reset style */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, interactive, page {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, interactive, page {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+br {
+  padding: 0;
+  border: 0;
+  margin-bottom: 0 0 1em 0;
+}
+/* reset style */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+body {
+  background-color: #2980b9;
+  margin: 0;
+  padding: 0;
+  display: block;
+  justify-content: center;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  font-size: 100%;
+}
+
+#container {
+  font-family: 'descartesJS_sansserif', sans-serif;
+  color: #ffffff;
+  position: relative;
+  /* width: 1024px; */
+  /* min-width: 1024px; */
+  /* min-height: 100vh; */
+  font-size: 19px;
+  background-color: #00aaea;
+
+  display: block;
+  width: 1024px;
+  min-width: 1024px;
+  height: 625px;
+  min-height: 625px;
+  overflow-y: scroll;
+
+}
+
+#contenido {
+  padding: 30px;
+  text-align: justify;
+}
+#contenido *:first-child {
+  margin-top: 0;
+}
+h1 {
+  color: #ffffff;
+  font-size: 21px;
+  padding-bottom: 0.15em;
+  margin: 1em 0 0.5em 0;
+  font-weight: bold;
+  border-bottom: 1px solid #ffffff;
+}
+p {
+  line-height: 1.4em;
+  padding: 1em 0 1em 0;
+}
+b {
+  font-weight: bold;
+}
+i {
+  font-style: italic;
+}
+em {
+  font-weight: bold;
+  font-style: italic;
+}
+a {
+  color: #f6e58d;
+}
+ul li {
+  list-style-type: circle;
+  list-style-position: inside;
+  padding-bottom: 0.25em;
+  text-indent: 1em;
+}
+.papel {
+  color: #2c2c8b;
+  font-weight: bold;
+}
