@@ -1,0 +1,10 @@
+{
+	"nivel" : [
+		"Primaria"
+	],
+	"area" : ["Matemáticas", "Geometría"],
+	"titulo" : "Áreas y perímetros",
+	"descripcion" : "Comprender las nociones de área y perímetro en el caso de polígonos irregulares con vértices en coordenadas enteras y desarrollar estrategias para calcularlas.",
+	"resena" : "Comprender las nociones de área y perímetro en el caso de polígonos irregulares con vértices en coordenadas enteras y desarrollar estrategias para calcularlas.",
+	"id" : "R5_Area_de_figuras"
+}

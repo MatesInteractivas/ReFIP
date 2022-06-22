@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="R5_Area_de_figuras" 
+	nivel="Primaria" 
+	area="Matemáticas, Geometría"
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Áreas y perímetros 
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+Comprender las nociones de área y perímetro en el caso de polígonos irregulares con vértices en coordenadas enteras y desarrollar estrategias para calcularlas.
+	]]></Descripcion>
+</recurso>

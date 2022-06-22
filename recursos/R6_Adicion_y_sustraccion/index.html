@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>REFIP - Expresiones algebraicas</title>
+  <link rel="icon" type="image/png" href="logos/favicon.png">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script type="text/javascript" src="lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="665">
+      <param name="tamaño" value="1024x665">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="images/REFIP_logo.svg">
+      <param name="expand" value="fit">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='HTMLIFrame' id='MAIN' y='40' alto='625' archivo='[escena]' ">
+      <param name="E_02" value="tipo='R2' id='E1' alto='41' fijo='sí' red='no' red10='no' ejes='no' ">
+      <param name="E_03" value="tipo='R2' id='MENU' dibujar-si='show_menu' fijo='sí' escala='1' O.x='-50%' O.y='-50%' fondo='ffffffff' red='no' red10='no' ejes='no' ">
+      <param name="C_01" value="id='retroceder' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(E1._w-95,0,40,40)' color='222222' color-int='f0f8ff' fuente puntos='8' imagen='images/retroceder.svg' acción='calcular' parámetro='idx=(escena_index>0)?escena_index-1:escena_index;bix=get_bix(idx);escena=Escena(idx);' ">
+      <param name="C_02" value="id='avanzar' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(E1._w-45,0,40,40)' color='222222' color-int='f0f8ff' fuente puntos='8' imagen='images/avanzar.svg' acción='calcular' parámetro='idx=(escena_index<escenas.long-1)?escena_index+1:escena_index;bix=get_bix(idx);escena=Escena(idx)' ">
+      <param name="C_03" value="id='menu_expand' interfaz='botón' tipo='numérico' región='interior' espacio='E1' expresión='(0,0,40,40)' color='222222' color-int='f0f8ff' fuente puntos='19' imagen='images/menu_expand.svg' acción='calcular' parámetro='show_menu=1' ">
+      <param name="C_04" value="id='menu_close' interfaz='botón' tipo='numérico' región='interior' espacio='MENU' expresión='(0,0,40,40)' color='222222' color-int='f0f8ff' fuente puntos='19' imagen='images/menu_close.svg' acción='calcular' parámetro='show_menu=0' ">
+      <param name="A_01" value="id='escenas' vector='sí' evaluar='una-sola-vez' tamaño='6' expresión='_titulo_=&squot;Adición y sustracción&squot;;;Mot_index=0;escenas[0]=&squot;escenas/1_Motivacion.html&squot;;Ini_index=1;escenas[1]=&squot;escenas/2_Inicio.html&squot;;Des_index=2;escenas[2]=&squot;escenas/3_Desarrollo.html&squot;;Cie_index=3;escenas[3]=&squot;escenas/4_Cierre.html&squot;;Ref_index=4;escenas[4]=&squot;escenas/5_Reflexiones.html&squot;;Inf_index=5;escenas[5]=&squot;escenas/6_Info.html&squot;;' tipo='vector' ">
+      <param name="A_02" value="id='nombre_escenas' vector='sí' evaluar='una-sola-vez' tamaño='6' expresión='nombre_escenas[Mot_index]=&squot;Motivación&squot;;nombre_escenas[Ini_index]=&squot;Inicio&squot;;nombre_escenas[Des_index]=&squot;Desarrollo&squot;;nombre_escenas[Cie_index]=&squot;Cierre&squot;;nombre_escenas[Ref_index]=&squot;Reflexiones&squot;;nombre_escenas[Inf_index]=&squot;Créditos&squot;;' tipo='vector' ">
+      <param name="A_03" value="id='Escena(i)' algoritmo='sí' expresión='escena' hacer='escena_index=i;escena=escenas[escena_index];_subtitulo_=Subtitulo(bix);;show_menu=0' tipo='función' ">
+      <param name="A_04" value="id='Subtitulo(i)' algoritmo='sí' expresión='subt' hacer='subt=(i==0)?nombre_escenas[Mot_index]:subt;subt=(i==1)?nombre_escenas[Ini_index]:subt;subt=(i==2)?nombre_escenas[Des_index]:subt;subt=(i==3)?nombre_escenas[Cie_index]:subt;subt=(i==4)?nombre_escenas[Ref_index]:subt;subt=(i==5)?nombre_escenas[Inf_index]:subt;' tipo='función' ">
+      <param name="A_05" value="id='get_bix(idx)' algoritmo='sí' expresión='bix' inicio='bix=5' hacer='bix=(idx<Inf_index)?4:bix;bix=(idx<Ref_index)?3:bix;bix=(idx<Cie_index)?2:bix;bix=(idx<Des_index)?1:bix;bix=(idx<Ini_index)?0:bix' tipo='función' ">
+      <param name="A_06" value="id='cual_sel()' algoritmo='sí' expresión='0' local='sel; x; y; cond1; cond2; temp1; temp2' hacer='sel=-1;x=MENU.mouse_x;y=-MENU.mouse_y;cond1=(x>0)&&(x<ancho_menu);// 640-65 es el tamaño del segmento;cond2=(y>65);;temp1=(640-65)/(escenas.long-1);temp2=ent(temp1/2);sel=(cond1&&cond2)?ent((y-65+temp2)/temp1):sel;;bix=(sel!=-1)?get_bix(sel):bix;escena=(sel!=-1)?Escena(sel):escena' tipo='función' ">
+      <param name="A_07" value="id='inicio()' algoritmo='sí' expresión='0' hacer='anchb=200;sepbtn=15;escena_index=0;escena=Escena(escena_index);;ancho_menu=190;;// colores del menú;color_1=&squot;273c75&squot;;color_2=&squot;74b9ff&squot;;color_3=&squot;f1c40f&squot;' tipo='función' ">
+      <param name="A_08" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='inicio();' ">
+      <param name="A_09" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="A_10" value="id='mouse_pressed' evento='sí' condición='MENU.mouse_pressed' acción='calcular' parámetro='cual_sel();show_menu=0' ejecución='alternar' ">
+      <param name="G_01" value="espacio='E1' tipo='rectángulo' fondo='sí' color='(R(color_1),G(color_1),B(color_1),00)' coord_abs='sí' expresión='(0,0,40,100)' relleno='(R(color_1),G(color_1),B(color_1),00)' ancho='1' ">
+      <param name="G_02" value="espacio='E1' tipo='rectángulo' fondo='sí' color='00aaea' coord_abs='sí' expresión='(43,0,770,100)' relleno='00aaea' ancho='1' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' color='ffffff' coord_abs='sí' expresión='[57,7]' texto='[_titulo_]  —  [_subtitulo_]' ancho='1' negrita='sí' fuente puntos='22' align='a_left' anchor='a_top_left' shadowColor='88000000' shadowOffsetX='3' shadowOffsetY='3' info='Título' ">
+      <param name="G_04" value="espacio='MENU' tipo='rectángulo' fondo='sí' color='(R(color_1),G(color_1),B(color_1),00)' coord_abs='sí' expresión='(0,0,40,100)' relleno='(R(color_1),G(color_1),B(color_1),00)' ancho='1' border_radius='8' info='Rectángulo usado como fondo del botón cerrar' ">
+      <param name="G_05" value="espacio='MENU' tipo='rectángulo' fondo='sí' color='ffffffff' coord_abs='sí' expresión='(0,40,ancho_menu,625)' relleno='(R(color_1),G(color_1),B(color_1),00)' ancho='0' info='Panel donde se muestra el menú de navegación de las escenas' ">
+      <param name="G_06" value="espacio='MENU' tipo='segmento' fondo='sí' color='(R(color_2),G(color_2),B(color_2),00)' coord_abs='sí' expresión='(35,65)(35,640)' tamaño='0' ancho='3' info='Segmento de fondo del menú de navegación' ">
+      <param name="G_07" value="espacio='MENU' tipo='arco' color='(R(color_2),G(color_2),B(color_2),00)' coord_abs='sí' centro='(35,65+10+s*(640-65-20)/(escenas.long-1))' radio='(nombre_escenas[s]!=0)?12:6' inicio='0' fin='360' familia='s' s.intervalo='[0,escenas.long-1]' s.pasos='escenas.long-1' relleno='(R(color_1),G(color_1),B(color_1),00)' ancho='3' info='Puntos del menú de navegación' ">
+      <param name="G_08" value="espacio='MENU' tipo='segmento' color='(R(color_3),G(color_3),B(color_3),00)' coord_abs='sí' expresión='(35,65)(35,65+10+ s*(640-65-20)/(escenas.long-1))' familia='s' s.intervalo='[0,escena_index]' s.pasos='escena_index' tamaño='0' ancho='4' info='Segmento que indica el avance del menú de navegación' ">
+      <param name="G_09" value="espacio='MENU' tipo='punto' color='(R(color_3),G(color_3),B(color_3),00)' coord_abs='sí' expresión='(35,65+10+ s*(640-65-20)/(escenas.long-1))' familia='s' s.intervalo='[0,escena_index]' s.pasos='escena_index' decimales='0' tamaño='(nombre_escenas[s]!=0)?14:9' info='Puntos que indican el avance del menú de navegación' ">
+      <param name="G_10" value="espacio='MENU' tipo='texto' color='(R((s<=escena_index)?color_1:color_2),G((s<=escena_index)?color_1:color_2),B((s<= escena_index)?color_1:color_2),00)' dibujar-si='nombre_escenas[s]!=0' coord_abs='sí' expresión='(35,65+10+ (s*(640-65-20)/(escenas.long-1)) -(s<=escena_index))' familia='s' s.intervalo='[0,escenas.long-1]' s.pasos='escenas.long-1' texto='[get_bix(s)+1]' decimales='0' ancho='1' negrita='sí' fuente puntos='16+7*(s<=escena_index)' align='a_left' anchor='a_center_center' info='Números del menú de navegación' ">
+      <param name="G_11" value="espacio='MENU' tipo='texto' color='(R((s<=escena_index)?color_3:color_2),G((s<=escena_index)?color_3:color_2),B((s<= escena_index)?color_3:color_2),00)' dibujar-si='nombre_escenas[s]!=0' coord_abs='sí' expresión='(65,65+10+s*(640-65-20)/(escenas.long-1))' familia='s' s.intervalo='[0,escenas.long-1]' s.pasos='escenas.long-1' texto='[nombre_escenas[s]]' decimales='0' ancho='1' negrita='sí' fuente puntos='21' align='a_left' anchor='a_center_left' info='Etiquetas del menú de navegación ' ">
+      <param name="G_12" value="espacio='E1' tipo='segmento' fondo='sí' color='0053b5' coord_abs='sí' expresión='(E1._w-100,4)(E1._w-100,E1._h-4)' tamaño='0' ancho='1' info='Segmento a lado de los botones de navegación' ">
+      <param name="G_13" value="espacio='E1' tipo='texto' fondo='sí' color='079992' coord_abs='sí' expresión='(E1._w-115,8)' texto='Números' ancho='1' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_right' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

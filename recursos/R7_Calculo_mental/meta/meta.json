@@ -1,0 +1,10 @@
+{
+	"nivel" : [
+		"Primaria"
+	],
+	"area" : ["Matemáticas", "Aritmética"],
+	"titulo" : "Cálculo mental",
+	"descripcion" : "Comprender el funcionamiento de técnicas de cálculo mental de adiciones y sustracciones.",
+	"resena" : "Comprender el funcionamiento de técnicas de cálculo mental de adiciones y sustracciones.",
+	"id" : "R7_Calculo_mental"
+}

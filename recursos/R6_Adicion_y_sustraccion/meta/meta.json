@@ -1,0 +1,10 @@
+{
+	"nivel" : [
+		"Primaria"
+	],
+	"area" : ["Matemáticas", "Aritmética"],
+	"titulo" : "Adición y sustracción",
+	"descripcion" : "Comprender errores y dificultades que tienen niños y niñas en el cálculo de adiciones y sustracciones usando el algoritmo usual.",
+	"resena" : "Comprender errores y dificultades que tienen niños y niñas en el cálculo de adiciones y sustracciones usando el algoritmo usual.",
+	"id" : "R6_Adicion_y_sustraccion"
+}

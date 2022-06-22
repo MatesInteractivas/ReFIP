@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="R6_Adicion_y_sustraccion" 
+	nivel="Primaria" 
+	area="Matemáticas, Aritmética" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Adición y sustracción 
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+Comprender errores y dificultades que tienen niños y niñas en el cálculo de adiciones y sustracciones usando el algoritmo usual.
+	]]></Descripcion>
+</recurso>
+

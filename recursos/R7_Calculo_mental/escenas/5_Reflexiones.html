@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' fijo='sí' fondo='00aaea' red='no' red10='no' ejes='no' ">
+      <param name="E_02" value="tipo='R2' id='Navegacion' x='(1024-140)/2' y='625-60' ancho='140' alto='45' fijo='sí' fondo='ff000000' red='no' red10='no' ejes='no' ">
+      <param name="C_01" value="id='nav_back' interfaz='botón' tipo='numérico' región='interior' espacio='Navegacion' expresión='(5,5,35,35)' color='222222' color-int='f0f8ff' fuente puntos='19' imagen='images/nav_back.svg' acción='calcular' parámetro='paso=(paso==0)?0:(paso-1);cambiarPaso()' activo-si='paso>0' extra_style='class=btn_nav|borderRadius=35' ">
+      <param name="C_02" value="id='nav_next' interfaz='botón' tipo='numérico' región='interior' espacio='Navegacion' expresión='(Navegacion._w-40,5,35,35)' color='222222' color-int='f0f8ff' fuente puntos='19' imagen='images/nav_next.svg' acción='calcular' parámetro='paso=(paso==limPasos)?paso:(paso+1);cambiarPaso()' activo-si='paso<limPasos' extra_style='class=btn_nav|borderRadius=35' ">
+      <param name="A_01" value="id='iniciar()' algoritmo='sí' expresión='x' hacer='paso=0;limPasos=3;;inicioEstrategia1=4;inicioEstrategia2=12;inicioEstrategia3=17;inicioEstrategia4=limPasos+1;;posInstruccion.x=E1._w/2;posInstruccion.y=20;posSugerencia.x=20;posSugerencia.y=posInstruccion.y+60;posEjemplo1.x=30;posEjemplo1.y=posSugerencia.y +175;posEjemplo2.x=E1._w/2 +posEjemplo1.x;posEjemplo2.y=posEjemplo1.y;;posEjemplo3.x=30;posEjemplo3.y=posSugerencia.y +135;posEjemplo4.x=E1._w/2 +posEjemplo3.x;posEjemplo4.y=posEjemplo3.y;;posEjemplo5.x=20;posEjemplo5.y=posSugerencia.y +115;;sepBtn=50;tamBtn.w=480;tamBtn.h=50;posBtn.x=(PantallaInicial._w-tamBtn.w)/2;posBtn.y=355;' tipo='función' ">
+      <param name="A_02" value="id='iniciarColores()' algoritmo='sí' expresión='x' hacer='bordeGeneral.R=44/255;bordeGeneral.G=44/255;bordeGeneral.B=139/255;;colorMarca.R=99/255;colorMarca.G=65/255;colorMarca.B=16/255' tipo='función' ">
+      <param name="A_03" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='iniciarColores();iniciar();' ">
+      <param name="A_04" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='E1' tipo='rectángulo' color='ff20303a' dibujar-si='paso==0' coord_abs='sí' expresión='((E1._w-550)/2,(E1._h-360)/2-25,600,360)' relleno='ffffff' ancho='0' border_radius='2' ">
+      <param name="G_02" value="espacio='E1' tipo='texto' color='000000' dibujar-si='paso==0' coord_abs='sí' expresión='[E1._w/2,E1._h/2-25]' texto='Existen variadas formas de efectuar el cálculo de una suma o una resta mentalmente. Cada persona puede usar una técnica según le acomode.\n\n\n❧ ¿Cómo calcula usted una suma o una resta mentalmente?\n\n❧ ¿Qué otras técnicas conoce?\n\n\n\c{\b{Veamos algunas técnicas de cálculo mental.}}' ancho='510' fuente puntos='20' align='a_justify' anchor='a_center_center' ">
+      <param name="G_03" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='0' coord_abs='no' expresión='(0,0)' tamaño='2' font_family='Monospaced' fuente puntos='12' info='Tecnica 1' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' color='ffffff' dibujar-si='paso==1' coord_abs='sí' expresión='[posInstruccion.x,posInstruccion.y]' texto='Basada en el doble de un número, para sumar o restar.' ancho='900' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' color='000000' dibujar-si='paso==1' coord_abs='sí' expresión='[posSugerencia.x,posSugerencia.y]' texto='Se usa preferentemente cuando:\n\n❧ En una suma ambos sumandos son números muy cercanos.\n❧ En una resta el minuendo es cercano al doble del sustraendo.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_06" value="espacio='E1' tipo='texto' color='000000' dibujar-si='paso==1' coord_abs='sí' expresión='[posEjemplo1.x+165,posEjemplo1.y]' texto='\serif{\b{\${19 + 18}}}' ancho='900' fuente puntos='40' align='a_left' anchor='a_top_left' ">
+      <param name="G_07" value="espacio='E1' tipo='imagen' dibujar-si='paso==1' coord_abs='sí' expresión='(E1._w/4,330,1,1)' archivo='images/flecha.png' rotini='-90' ">
+      <param name="G_08" value="espacio='E1' tipo='texto' color='000000' dibujar-si='paso==1' coord_abs='sí' expresión='[posEjemplo1.x,posEjemplo1.y+106]' texto='Se calcula el doble de \serif{\b{\${18}}}, y luego se agrega \serif{\b{\${1}}} más.\n\n\c{\serif{\b{\${(18 + 18) + 1 = 36 + 1 = 37}}}}' ancho='E1._w/2-40' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_09" value="espacio='E1' tipo='texto' color='000000' dibujar-si='paso==1' coord_abs='sí' expresión='[posEjemplo2.x+165,posEjemplo2.y]' texto='\serif{\b{\${72 - 35}}}' ancho='900' fuente puntos='40' align='a_left' anchor='a_top_left' ">
+      <param name="G_10" value="espacio='E1' tipo='imagen' dibujar-si='paso==1' coord_abs='sí' expresión='(3*E1._w/4,330,1,1)' archivo='images/flecha.png' rotini='-90' ">
+      <param name="G_11" value="espacio='E1' tipo='texto' color='000000' dibujar-si='paso==1' coord_abs='sí' expresión='[posEjemplo2.x,posEjemplo2.y+106]' texto='Como el doble de \serif{\b{\${35}}} es \serif{\b{\${70}}}. El resultado de la resta es \serif{\b{\${35}}} más \serif{\b{\${2}}}.\n\c{\serif{\b{\${70 – 35 = 35 ⇒ 72 – 35 = 35 + 2}}}}' ancho='E1._w/2-40' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_12" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='0' coord_abs='no' expresión='(0,0)' tamaño='2' font_family='Monospaced' fuente puntos='12' info='Tecnica 2' ">
+      <param name="G_13" value="espacio='E1' tipo='texto' color='ffffff' dibujar-si='paso==2' coord_abs='sí' expresión='[posInstruccion.x,posInstruccion.y]' texto='Descomponer usando el 5, para sumar.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+      <param name="G_14" value="espacio='E1' tipo='texto' color='000000' dibujar-si='paso==2' coord_abs='sí' expresión='[posSugerencia.x,posSugerencia.y]' texto='Esta técnica se basa en la descomposición aditiva de uno o los dos sumandos usando el \serif{\b{\${5}}}.' ancho='0' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_15" value="espacio='E1' tipo='texto' color='000000' dibujar-si='paso==2' coord_abs='sí' expresión='[posEjemplo3.x+150,posEjemplo3.y]' texto='\serif{\b{\${15 + 7}}}' ancho='900' fuente puntos='40' align='a_left' anchor='a_top_left' ">
+      <param name="G_16" value="espacio='E1' tipo='imagen' dibujar-si='paso==2' coord_abs='sí' expresión='(E1._w/4-15,290,1,1)' archivo='images/flecha.png' rotini='-90' ">
+      <param name="G_17" value="espacio='E1' tipo='texto' color='000000' dibujar-si='paso==2' coord_abs='sí' expresión='[posEjemplo3.x+70,posEjemplo3.y+106]' texto='Descomponemos el \serif{\b{\${7}}} como \serif{\b{\${5 + 2}}}.\n\n\c{\serif{\b{\${15 + (5 + 2)}}}}' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_18" value="espacio='E1' tipo='imagen' dibujar-si='paso==2' coord_abs='sí' expresión='(E1._w/2,377,1,1)' archivo='images/flecha.png' ">
+      <param name="G_19" value="espacio='E1' tipo='texto' color='000000' dibujar-si='paso==2' coord_abs='sí' expresión='[posEjemplo4.x+20,posEjemplo4.y+106]' texto='Calculamos \serif{\b{\${15 + 5}}} y luego al resultado le agregamos \serif{\b{\${2}}}.\n\n\c{\serif{\b{\${(15 + 5 ) + 2 = 20 + 2 = 22}}}}' ancho='E1._w/2-140' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+      <param name="G_20" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='0' coord_abs='no' expresión='(0,0)' tamaño='2' font_family='Monospaced' fuente puntos='12' info='Tecnica 3' ">
+      <param name="G_21" value="espacio='E1' tipo='texto' color='ffffff' dibujar-si='paso==3' coord_abs='sí' expresión='[posInstruccion.x,posInstruccion.y]' texto='Basada en la suma, para calcular una resta ' ancho='900' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+      <param name="G_22" value="espacio='E1' tipo='texto' color='000000' dibujar-si='paso==3' coord_abs='sí' expresión='[posSugerencia.x,posSugerencia.y]' texto='Esta técnica se usa preferentemente para calcular restas en que el minuendo y el sustraendo son números cercanos.\n\nPara calcular la resta se cuenta a partir del sustraendo, hasta llegar al minuendo.' ancho='E1._w-40' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_23" value="espacio='E1' tipo='texto' color='000000' dibujar-si='paso==3' coord_abs='sí' expresión='[E1._w/2-63,posEjemplo5.y]' texto='\serif{\b{\${32 - 27}}}' ancho='900' fuente puntos='40' align='a_left' anchor='a_top_left' ">
+      <param name="G_24" value="espacio='E1' tipo='texto' color='000000' dibujar-si='paso==3' coord_abs='sí' expresión='[posEjemplo5.x,posEjemplo5.y+106]' texto='Contamos a partir de \serif{\b{\${27}}}, hasta llegar a \serif{\b{\${32}}}. El número de veces que avanzamos en la secuencia numérica corresponde a la diferencia que buscamos. ' ancho='E1._w-40' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+      <param name="G_25" value="espacio='E1' tipo='imagen' dibujar-si='paso==3' coord_abs='sí' expresión='(E1._w/2,460,0.5,0.5)' archivo='images/reflexionesPanel11.png' ">
+      <param name="G_26" value="espacio='Navegacion' tipo='texto' color='ffffff' coord_abs='sí' expresión='(Navegacion._w/2,Navegacion._h/2)' texto='[paso+1]/[limPasos+1]' fijo='no' ancho='1' negrita='sí' font_family='Monospaced' align='a_left' anchor='a_center_center' ">
+      <param name="Animación" value="pausa='1000' controles='no' auto='sí' repetir='no' inicio='t=0' hacer='t=t+1' mientras='t<200' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

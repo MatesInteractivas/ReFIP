@@ -1,0 +1,10 @@
+{
+	"nivel" : [
+		"Primaria"
+	],
+	"area" : ["Matemáticas", "Algebra elemental"],
+	"titulo" : "Expresiones algebraicas",
+	"descripcion" : "Comprender el uso de diagramas de barra como medio de representación previo al planteamiento de ecuaciones de primer grado.",
+	"resena" : "Comprender el uso de diagramas de barra como medio de representación previo al planteamiento de ecuaciones de primer grado.",
+	"id" : "R1_Expresiones_algebraicas"
+}

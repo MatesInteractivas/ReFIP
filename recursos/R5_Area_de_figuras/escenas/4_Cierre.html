@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' fijo='sí' escala='25' O.x='-400' O.y='150' despl_imagen='expand.' fondo='00aaea' red='no' red10='no' ejes='no' ">
+      <param name="E_02" value="tipo='HTMLIFrame' id='E2' x='40' y='160' ancho='660' alto='390' archivo='escenaCortePoligonos/cortePoligonosCierre.html' ">
+      <param name="C_01" value="id='cortarBtn' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Cortar polígono' expresión='(posBtn.x,posBtn.y,tamBtn.w,tamBtn.h)' color='000000' color-int='ecf0f1' negrita='sí' fuente puntos='18' acción='calcular' parámetro='cortarBtnSel=1;cualMensaje=1;muestraMarcas=0;initEvent=1;E2.exec(&squot;cutPolygonMode&squot;,&squot;&squot;)' dibujar-si='(numeroDePoligonos<2)&&(!cortarBtnSel)' extra_style='flat=1|class=btn|overColor=C7D5D8|downColor=94AFB5' ">
+      <param name="C_02" value="id='cortarDeNuevoBtn' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Cortar polígono' expresión='(posBtn.x,posBtn.y,tamBtn.w,tamBtn.h)' color='000000' color-int='ecf0f1' negrita='sí' fuente puntos='18' acción='calcular' parámetro='area_ext_A=136;numeroDePoligonos=0;E2.exec(&squot;showInitPolygon&squot;,&squot;&squot;);' activo-si='!cortarBtnSel' extra_style='flat=1|class=btn|overColor=C7D5D8|downColor=94AFB5' ">
+      <param name="C_03" value="id='borrarPuntoBtn' interfaz='botón' tipo='numérico' región='interior' espacio='E1' nombre='Borrar punto' expresión='(posBtn.x+(tamBtn.w+btnSep),posBtn.y,tamBtn.w,tamBtn.h)' color='000000' color-int='ecf0f1' negrita='sí' fuente puntos='18' acción='calcular' parámetro='E2.exec(&squot;deleteLastPoint&squot;,&squot;&squot;)' activo-si='cortarBtnSel' extra_style='flat=1|class=btn|overColor=C7D5D8|downColor=94AFB5' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='showPresentation=1;area_ext_A=136;area_ext_B=0;;cortarBtnSel=0;mideBtnSel=0;verificarBtnSel=0;numeroDePoligonos=1;muestraMarcas=0;cualMensaje=0;;tamBtn.w=160;tamBtn.h=35;posBtn.x=145;posBtn.y=E1._h-75;btnSep=20;posBtn.x=20+(700-tamBtn.w*2-btnSep)/2;;tamAreaText.w=170;tamAreaText.h=30;posAreaText.x=E1._w-tamAreaText.w-70;posAreaText.y=80;sepAreaText=3.6;;' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' hacer=';' ">
+      <param name="A_03" value="id='e3' evento='sí' condición='(initEvent)&&(numeroDePoligonos>0)' acción='calcular' parámetro='cortarBtnSel=1\ncualMensaje=1\nmuestraMarcas=0\nE2.exec(&squot;cutPolygonMode&squot;,&squot;&squot;)\n' ejecución='alternar' ">
+      <param name="G_01" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ff20303a' coord_abs='sí' expresión='(20,70,700,535)' relleno='ffffff' ancho='0' border_radius='2' ">
+      <param name="G_02" value="espacio='E1' tipo='rectángulo' fondo='sí' color='ff20303a' coord_abs='sí' expresión='(740,70,264,535)' relleno='ffffff' ancho='0' border_radius='2' ">
+      <param name="G_03" value="espacio='E1' tipo='texto' fondo='sí' color='ffffff' coord_abs='sí' expresión='[E1._w/2,20]' texto='Divide el terreno en dos partes con igual área' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+      <param name="G_04" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='0' coord_abs='no' expresión='(0,0)' tamaño='2' info='Texto' ">
+      <param name="G_05" value="espacio='E1' tipo='texto' color='000000' dibujar-si='cualMensaje==0' coord_abs='sí' expresión='[40,80]' texto='Presiona el botón “Cortar polígono” para dividir el terreno.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_06" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(cualMensaje==1)' coord_abs='sí' expresión='[40,80]' texto='Selecciona el terreno para cortarlo.' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_07" value="espacio='E1' tipo='texto' color='000000' dibujar-si='cualMensaje==3' coord_abs='sí' expresión='[40,80]' texto='Da clic en el borde del terreno para comenzar a trazar una línea poligonal y dividir el terreno.' ancho='660' fuente puntos='19' align='a_justify' anchor='a_top_left' ">
+      <param name="G_08" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='0' coord_abs='no' expresión='(0,0)' tamaño='2' info='Palomas' ">
+      <param name="G_09" value="espacio='E1' tipo='texto' color='000000' coord_abs='sí' expresión='[760,80]' texto='El área del terreno \b{A} es \b{\${[area_ext_A] m^2}}' fijo='no' ancho='224' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+      <param name="G_10" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(numeroDePoligonos>1)' coord_abs='sí' expresión='[760,170]' texto='El área del terreno \b{B} es \b{\${[area_ext_B] m^2}}' fijo='no' ancho='224' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+      <param name="G_11" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(numeroDePoligonos>1)' coord_abs='sí' expresión='[760+224/2,270]' texto='área(\b{A}) \b{[(area_ext_A<area_ext_B)?&squot;<&squot;:((area_ext_A>area_ext_B)?&squot;>&squot;:&squot;=&squot;)]} área(\b{B})' fijo='no' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+      <param name="G_12" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(numeroDePoligonos>1)' coord_abs='sí' expresión='[760,370]' texto='[(area_ext_A==area_ext_B)?&squot;Muy bien, i&squot;:&squot;I&squot;]ntenta cortar el terreno de otra manera.' fijo='no' ancho='224' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>

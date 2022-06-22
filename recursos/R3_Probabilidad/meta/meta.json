@@ -1,0 +1,10 @@
+{
+	"nivel" : [
+		"Primaria"
+	],
+	"area" : ["Matemáticas", "Probabilidad"],
+	"titulo" : "Probabilidad",
+	"descripcion" : "Construir la noción de probabilidad a partir del registro de frecuencias relativas en un experimento aleatorio.",
+	"resena" : "Construir la noción de probabilidad a partir del registro de frecuencias relativas en un experimento aleatorio.",
+	"id" : "R3_Probabilidad"
+}

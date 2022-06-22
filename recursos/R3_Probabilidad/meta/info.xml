@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="R3_Probabilidad" 
+	nivel="Primaria" 
+	area="Matemáticas, Probabilidad" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Probabilidad 
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+Construir la noción de probabilidad a partir del registro de frecuencias relativas en un experimento aleatorio.
+	]]></Descripcion>
+</recurso>
+

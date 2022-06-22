@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>TITULO</title>
+  <link rel="stylesheet" href="../css/style.css" type="text/css">
+  <script type="text/javascript" src="../lib/descartes-min.js" charset="utf-8"></script>
+</head>
+
+<body style="padding:0; margin:0; background:#eff0f1;">
+
+  <div align="center">
+    <ajs name="Descartes" code="Descartes" width="1024" height="625">
+      <param name="tamaño" value="1024x625">
+      <param name="decimal_symbol" value=".">
+      <param name="image_loader" value="vacio.gif">
+      <param name="nombre" value="Descartes">
+      <param name="Versión" value="5.5">
+      <param name="editable" value="no">
+      <param name="Idioma" value="español">
+      <param name="Botones" value="créditos=no config=no inicio=no limpiar=no filas_norte=0 filas_sur=0 ancho_este=150 ancho_oeste=150 alto=23 ">
+      <param name="E_01" value="tipo='R2' id='E1' fijo='sí' despl_imagen='expand.' fondo='00aaea' red='no' red10='no' ejes='no' ">
+      <param name="E_02" value="tipo='R2' id='Navegacion' x='(1024-140)/2' y='625-60' ancho='140' alto='45' fondo='ff000000' red='no' red10='no' ejes='no' ">
+      <param name="C_01" value="id='nav_back' interfaz='botón' tipo='numérico' región='interior' espacio='Navegacion' expresión='(5,5,35,35)' color='222222' color-int='f0f8ff' fuente puntos='19' imagen='images/nav_back.svg' acción='calcular' parámetro='paso=(paso==0)?0:(paso-1);cambiarPaso()' activo-si='paso>0' extra_style='class=btn_nav|borderRadius=35' ">
+      <param name="C_02" value="id='nav_next' interfaz='botón' tipo='numérico' región='interior' espacio='Navegacion' expresión='(Navegacion._w-40,5,35,35)' color='222222' color-int='f0f8ff' fuente puntos='19' imagen='images/nav_next.svg' acción='calcular' parámetro='paso=(paso==limPasos)?paso:(paso+1);cambiarPaso()' activo-si='paso<limPasos' extra_style='class=btn_nav|borderRadius=35' ">
+      <param name="A_01" value="id='INICIO' algoritmo='sí' evaluar='una-sola-vez' hacer='paso=0;;limPasos=12;;posTitulo.x=E1._w/2;posTitulo.y=20;;posTexto.x=25;posTexto.y=posTitulo.y +73;anchoTexto=E1._w-2*posTexto.x' ">
+      <param name="A_02" value="id='CALCULOS' algoritmo='sí' evaluar='siempre' ">
+      <param name="G_01" value="espacio='Navegacion' tipo='texto' color='ffffff' coord_abs='sí' expresión='(Navegacion._w/2,Navegacion._h/2)' texto='[paso+1]/13' fijo='no' ancho='1' negrita='sí' font_family='Monospaced' align='a_left' anchor='a_center_center' ">
+      <param name="G_02" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='0' coord_abs='no' expresión='(0,0)' tamaño='2' ">
+      <param name="G_03" value="espacio='E1' tipo='rectángulo' color='ff20303a' dibujar-si='(paso==0)' coord_abs='sí' expresión='((E1._w-900)/2,(E1._h-110)/2-27,900,110)' relleno='ffffff' ancho='0' border_radius='2' ">
+      <param name="G_04" value="espacio='E1' tipo='texto' color='000000' dibujar-si='paso=0' coord_abs='sí' expresión='[E1._w/2,565/2]' texto='❧ No confundir las fórmulas de cálculo de áreas con el concepto de medición de área\n\n❧ ¿Cuál es el conocimiento matemático que permite validar la estrategia de descomposición de figuras?' ancho='1' fuente puntos='20' align='a_left' anchor='a_center_center' ">
+      <param name="G_05" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='0' coord_abs='no' expresión='(0,0)' tamaño='2' ">
+      <param name="G_06" value="espacio='E1' tipo='texto' color='ffffff' dibujar-si='(paso>0)&&(paso<8)' coord_abs='sí' expresión='[posTitulo.x,posTitulo.y]' texto='No confundir las fórmulas de cálculo de áreas con el concepto de medición de área' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+      <param name="G_07" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(paso==1)' coord_abs='sí' expresión='[posTexto.x,posTexto.y]' texto='El área la hemos definido como la medida de la superficie de una región del plano. Para medir el área debemos responder a la pregunta:' ancho='anchoTexto' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+      <param name="G_08" value="espacio='E1' tipo='texto' color='14003c' dibujar-si='(paso==1)' coord_abs='sí' expresión='[posTexto.x,posTexto.y+100]' texto='¿Cuántas veces cabe una unidad de área en la superficie?' ancho='anchoTexto' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_09" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(paso==1)' coord_abs='sí' expresión='[posTexto.x,posTexto.y+180]' texto='La respuesta a la pregunta anterior, se debe dar en primera instancia sin aplicar fórmulas, pues lo importante es que los niños y niñas midan el área de una figura, contando cuantas veces cabe la unidad de medida, por ejemplo un cuadrado de un \${1cm^2}, en la superficie que se está midiendo. ' ancho='anchoTexto' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+      <param name="G_10" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='0' coord_abs='no' expresión='(0,0)' tamaño='2' ">
+      <param name="G_11" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(paso==2)' coord_abs='sí' expresión='[posTexto.x,posTexto.y]' texto='Por ello, este recurso usa las cuadrículas y se mide el área contando centímetros cuadrados o partes de él, más aún cuando el currículum vigente plantea que los estudiantes de 4to básico deben saber:\n\n• Reconocer que una cuadrícula es un medio para comparar áreas. \n• Determinar el área de rectángulos y cuadrados mediante el conteo de cuadrículas. \n• Confeccionar concretamente, en cuadrículas, rectángulos de diferentes formas, pero que tienen igual cantidad de cuadrados. \n\nAsí entonces el foco de este recurso está en medir una superficie, y no en el uso de fórmulas para calcular áreas, con lo cual no estamos diciendo que esto no se debe hacer, solo planteamos que el uso de fórmulas es posterior a medir las superficies con alguna unidad de medida.' ancho='anchoTexto' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+      <param name="G_12" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='0' coord_abs='no' expresión='(0,0)' tamaño='2' ">
+      <param name="G_13" value="espacio='E1' tipo='texto' color='14003c' dibujar-si='(paso>=3)&&(paso<7)' coord_abs='sí' expresión='[posTexto.x,posTexto.y]' texto='¿Cómo medir superficies poligonales que no son rectangulares?' ancho='anchoTexto' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_14" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(paso>=3)&&(paso<7)' coord_abs='sí' expresión='[posTexto.x,posTexto.y+45]' texto='Una de las estrategias usadas para contar unidades de área en una superficie, es cortar pedazos de la figura y formar unidades cuadradas mediante movimientos rígidos (reflexiones, traslaciones o rotaciones). Por ejemplo, para calcular el área de la siguiente figura:' ancho='anchoTexto' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+      <param name="G_15" value="espacio='E1' tipo='imagen' dibujar-si='(paso==3)' coord_abs='sí' expresión='(ent((E1._w-210)/2),240)' archivo='images/reflexiones_img_0.png' ">
+      <param name="G_16" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='0' coord_abs='no' expresión='(0,0)' tamaño='2' ">
+      <param name="G_17" value="espacio='E1' tipo='imagen' dibujar-si='(paso==4)' coord_abs='sí' expresión='(ent((E1._w-210)/2),240)' archivo='images/reflexiones_img_1.png' ">
+      <param name="G_18" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(paso==4)' coord_abs='sí' expresión='[posTitulo.x,posTexto.y+360]' texto='Podemos tomar un triángulo.' ancho='anchoTexto' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+      <param name="G_19" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='0' coord_abs='no' expresión='(0,0)' tamaño='2' ">
+      <param name="G_20" value="espacio='E1' tipo='imagen' dibujar-si='(paso==5)' coord_abs='sí' expresión='(ent((E1._w-210)/2),240)' archivo='images/reflexiones_img_2.png' ">
+      <param name="G_21" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(paso==5)' coord_abs='sí' expresión='[posTitulo.x,posTexto.y+360]' texto='Yuxtaponerlo en la parte superior izquierda de la figura, para formar una unidad cuadrada.' ancho='anchoTexto' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+      <param name="G_22" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='0' coord_abs='no' expresión='(0,0)' tamaño='2' ">
+      <param name="G_23" value="espacio='E1' tipo='imagen' dibujar-si='(paso==6)' coord_abs='sí' expresión='(ent((E1._w-210)/2),240)' archivo='images/reflexiones_img_3.png' ">
+      <param name="G_24" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(paso==6)' coord_abs='sí' expresión='[posTitulo.x,posTexto.y+360]' texto='Y luego contar las unidades cuadradas que cubre.' ancho='anchoTexto' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+      <param name="G_25" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='0' coord_abs='no' expresión='(0,0)' tamaño='2' ">
+      <param name="G_26" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(paso==7)' coord_abs='sí' expresión='[posTexto.x,posTexto.y]' texto='La idea de que el área de una figura se conserva al aplicar movimientos rígidos, es una idea muy potente, pues además de poder medir superficies de figuras compuestas, también permite deducir fórmulas de figuras a partir de otras previamente conocidas, y además se relaciona con lo que los estudiantes de 4to y 5to básico deben saber hacer en este contenido ya que ellos tienen que:\n\n• Usar software educativo para componer o descomponer figuras compuestas de cuadrículas o rectángulos. \n• Calcular el área de figuras formadas por rectángulos y cuadrados. \n• Transformar figuras del plano en otras de igual área, aplicando transformaciones isométricas. \n    Por ejemplo: aplican traslaciones para transformar paralelogramos en rectángulos de igual área.\n• Elaborar estrategias para calcular áreas de triángulos rectángulos a partir del área de un rectángulo.' ancho='anchoTexto' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+      <param name="G_27" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='0' coord_abs='no' expresión='(0,0)' tamaño='2' ">
+      <param name="G_28" value="espacio='E1' tipo='texto' color='ffffff' dibujar-si='(paso>7)' coord_abs='sí' expresión='[posTitulo.x+10,posTitulo.y]' texto='¿Cuál es el conocimiento matemático que permite validar la estrategia de descomposición de figuras?' ancho='1' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+      <param name="G_29" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(paso==8)' coord_abs='sí' expresión='[posTexto.x,posTexto.y]' texto='Existen dos propiedades que permiten asegurar que las estrategias usadas efectivamente funcionen. La primera es:' ancho='anchoTexto' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+      <param name="G_30" value="espacio='E1' tipo='texto' color='14003c' dibujar-si='(paso==8)' coord_abs='sí' expresión='[posTitulo.x,posTexto.y+100]' texto='Si dos figuras son congruentes, entonces tienen la misma área.' ancho='anchoTexto' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+      <param name="G_31" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='0' coord_abs='no' expresión='(0,0)' tamaño='2' ">
+      <param name="G_32" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(paso==9)' coord_abs='sí' expresión='[posTexto.x,posTexto.y]' texto='En particular, si una figura B es la imagen vía una isometría de una figura A, entonces  esas figuras son congruentes y por ende tienen la misma área. Es decir, si dos figuras son congruentes ninguna de sus medidas cambian, así sean reflejadas, trasladas o rotadas. De hecho, se puede superponer una en la otra y calzan perfectamente. Las dos figuras de abajo tienen la misma área, pues una resulta de la otra vía una reflexión.' ancho='anchoTexto' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+      <param name="G_33" value="espacio='E1' tipo='imagen' dibujar-si='(paso==9)' coord_abs='sí' expresión='(ent((E1._w-487)/2),270)' archivo='images/reflexiones_img_4.png' ">
+      <param name="G_34" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='0' coord_abs='no' expresión='(0,0)' tamaño='2' ">
+      <param name="G_35" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(paso==10)' coord_abs='sí' expresión='[posTexto.x,posTexto.y]' texto='La segunda propiedad es la siguiente:' ancho='anchoTexto' fuente puntos='20' align='a_left' anchor='a_top_left' ">
+      <param name="G_36" value="espacio='E1' tipo='texto' color='14003c' dibujar-si='(paso==10)' coord_abs='sí' expresión='[posTitulo.x,posTexto.y+100]' texto='El área de la unión de dos figuras que no se superponen es la suma de las áreas de las figuras individuales.' ancho='anchoTexto' negrita='sí' fuente puntos='20' align='a_left' anchor='a_top_center' ">
+      <param name="G_37" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='0' coord_abs='no' expresión='(0,0)' tamaño='2' ">
+      <param name="G_38" value="espacio='E1' tipo='texto' color='000000' dibujar-si='(paso>=11)' coord_abs='sí' expresión='[posTexto.x,posTexto.y]' texto='En particular, si dos figuras se yuxtaponen, el área de la figura compuesta es la suma de las áreas de las figuras. Es decir, si una figura tiene área A y otra tiene área B, entonces el área de la figura que resulta de yuxtaponer ambas figuras es A+B.' ancho='anchoTexto' fuente puntos='20' align='a_justify' anchor='a_top_left' ">
+      <param name="G_39" value="espacio='E1' tipo='imagen' dibujar-si='(paso>=11)' coord_abs='sí' expresión='(ent((E1._w-535)/2),175)' archivo='images/reflexiones_img_5.png' ">
+      <param name="G_40" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='0' coord_abs='no' expresión='(0,0)' tamaño='2' ">
+      <param name="G_41" value="espacio='E1' tipo='texto' color='ecf0f1' dibujar-si='(paso==12)' coord_abs='sí' expresión='[posTexto.x+50,posTexto.y+360]' texto='\b{Nota}: esta propiedad no es aplicable al perímetro de figuras. Si dos figuras componen una figura, el perímetro de la figura compuesta no es necesariamente la suma de los perímetros de las figuras individuales, pues puede ocurrir que una parte de los contornos de las figuras individuales, deje de ser parte del contorno de la figura compuesta.' ancho='anchoTexto-100' align='a_justify' anchor='a_top_left' ">
+      <param name="G_42" value="espacio='E1' tipo='punto' color='20303a' dibujar-si='0' coord_abs='no' expresión='(0,0)' tamaño='2' ">
+      <param name="G_43" value="espacio='E1' tipo='texto' color='20303a' coord_abs='sí' expresión='[20,20]' ancho='1' align='a_left' anchor='a_top_left' ">
+    </ajs>
+  </div>
+
+
+
+</body>
+</html>
