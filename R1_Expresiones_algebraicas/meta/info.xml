@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="R1_Expresiones_algebraicas" 
+	nivel="Licenciatura" 
+	area="Matemáticas, Algebra elemental" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Expresiones algebraicas 
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+Objetivo: 
+Comprender el uso de diagramas de barra como medio de representación 
+previo al planteamiento de ecuaciones de primer grado.
+	]]></Descripcion>
+</recurso>
+

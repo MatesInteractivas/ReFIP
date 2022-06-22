@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="R5_Areas_y_perimetros" 
+	nivel="Licenciatura" 
+	area="Matemáticas, Geometría"
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Areas y perímetros 
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+Objetivo: Comprender las nociones de área y perímetro en el caso
+de polígonos irregulares con vértices en coordenadas enteras y
+desarrollar estrategias para calcularlas.
+	]]></Descripcion>
+</recurso>

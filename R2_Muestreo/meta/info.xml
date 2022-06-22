@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recurso 
+	id="R2_Muestreo" 
+	nivel="Licenciatura" 
+	area="Matemáticas, Estadística" 
+	plataforma="HTML 5" 
+	>
+	<titulo><![CDATA[
+		Población y muestra 
+	]]></titulo>
+	
+	<Descripcion><![CDATA[
+Objetivo: Comprender las condiciones para que una muestra 
+sea representativa de la población.
+	]]></Descripcion>
+</recurso>
+
